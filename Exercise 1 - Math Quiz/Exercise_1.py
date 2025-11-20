@@ -122,11 +122,11 @@ for frame in (home, diff, instruct, quiz, complete):
     frame.place(x=0, y=0, relwidth=1, relheight=1)
 
 # Background images
-home_bg = ImageTk.PhotoImage(Image.open(r"C:\Users\danie\OneDrive\Desktop\Assessment 1 - Clone Tasks\skills-portfolio-DanielleXetlog\Exercise 1 - Math Quiz\Mathematics.png"))
-diff_bg = ImageTk.PhotoImage(Image.open(r"C:\Users\danie\OneDrive\Desktop\Assessment 1 - Clone Tasks\skills-portfolio-DanielleXetlog\Exercise 1 - Math Quiz\Difficulty.png"))
-instruct_bg = ImageTk.PhotoImage(Image.open(r"C:\Users\danie\OneDrive\Desktop\Assessment 1 - Clone Tasks\skills-portfolio-DanielleXetlog\Exercise 1 - Math Quiz\Instructions.png"))
-quiz_bg = ImageTk.PhotoImage(Image.open(r"C:\Users\danie\OneDrive\Desktop\Assessment 1 - Clone Tasks\skills-portfolio-DanielleXetlog\Exercise 1 - Math Quiz\Questions.png"))
-complete_bg = ImageTk.PhotoImage(Image.open(r"C:\Users\danie\OneDrive\Desktop\Assessment 1 - Clone Tasks\skills-portfolio-DanielleXetlog\Exercise 1 - Math Quiz\Result.png"))
+home_bg = ImageTk.PhotoImage(Image.open("Mathematics.png"))
+diff_bg = ImageTk.PhotoImage(Image.open("Difficulty.png"))
+instruct_bg = ImageTk.PhotoImage(Image.open("Instructions.png"))
+quiz_bg = ImageTk.PhotoImage(Image.open("Questions.png"))
+complete_bg = ImageTk.PhotoImage(Image.open("Result.png"))
 
 tk.Label(home, image=home_bg).place(x=0, y=0, relwidth=1, relheight=1)
 tk.Label(diff, image=diff_bg).place(x=0, y=0, relwidth=1, relheight=1)
