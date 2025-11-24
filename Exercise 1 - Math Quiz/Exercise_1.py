@@ -114,6 +114,7 @@ current_difficulty = "easy"
 root = tk.Tk()
 root.title("Exercise 1 - Mathematics")
 root.geometry("1920x1080")
+root.iconbitmap("Logo 1.ico")
 
 # Create frames
 home = tk.Frame(root); diff = tk.Frame(root); instruct = tk.Frame(root)
