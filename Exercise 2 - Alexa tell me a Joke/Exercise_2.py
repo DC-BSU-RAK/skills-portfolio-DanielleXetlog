@@ -202,6 +202,7 @@ Good luck and have fun learning math!"""
 root = tk.Tk()
 root.title("Exercise 2 - Alexa tell me a Joke")
 root.geometry("1920x1080")
+root.iconbitmap("Logo 2.ico")
 
 # Start application by showing main menu screen
 frame_one()
