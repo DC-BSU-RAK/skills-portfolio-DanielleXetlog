@@ -186,7 +186,7 @@ def frame_three():
 - "Show joke answer" which will show the answer after.
 - "Next joke" which will proceed to the next joke that you want to hear.
 
-Good luck and have fun learning math!"""
+Good luck and have fun laughing!"""
     
     instructions_label = tk.Label(root, text=instructions_text, font=("Arial", 14), bg="#c11d1d", fg="white", justify="left")
     instructions_label.place(relx=0.5, rely=0.67, anchor="center")
