@@ -362,7 +362,8 @@ def display_search_results(search_text):
             checkbox_vars.append(checkbox_var)
             checkbox=tk.Checkbutton(scrollable_frame,variable=checkbox_var,bg="#121b30",activebackground="#121b30")
             checkbox.grid(row=i,column=0,sticky="w",padx=10,pady=2)
-            student_info=f"{student['name']:<18}      {student['id']:<12}       {student['coursework']:<15}                                 {student['exam']:<15}                               {student['percentage']:.1f}%{'':<8}      {student['grade']}"
+            # FIXED: Removed extra spacing that was pushing exam marks and overall grades out of view
+            student_info=f"{student['name']:<18}        {student['id']:<12}     {student['coursework']:<15}   {student['exam']:<15}{student['percentage']:.1f}%{'':<8}        {student['grade']}"
             student_label=tk.Label(scrollable_frame,text=student_info,font=("Courier New",11),bg="#121b30",fg="#f1f5f9",anchor="w")
             student_label.grid(row=i,column=1,sticky="w",padx=10,pady=2)
         result_label.config(text="")
@@ -404,7 +405,7 @@ def display_student_data():
         checkbox_vars.append(checkbox_var)
         checkbox=tk.Checkbutton(scrollable_frame,variable=checkbox_var,bg="#121b30",activebackground="#121b30")
         checkbox.grid(row=i,column=0,sticky="w",padx=10,pady=2)
-        student_info=f"{student['name']:<18}      {student['id']:<12}       {student['coursework']:<15}       {student['exam']:<15}{student['percentage']:.1f}%{'':<8}      {student['grade']}"
+        student_info=f"{student['name']:<18}         {student['id']:<12}     {student['coursework']:<15}  {student['exam']:<15}{student['percentage']:.1f}%{'':<8}        {student['grade']}"
         student_label=tk.Label(scrollable_frame,text=student_info,font=("Courier New",11),bg="#121b30",fg="#f1f5f9",anchor="w")
         student_label.grid(row=i,column=1,sticky="w",padx=10,pady=2)
         total_percentage+=student['percentage']
